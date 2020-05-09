@@ -1,0 +1,18 @@
+.homepage {
+    background: url('{{site.baseurl}}/assets/images/color_plate.jpg') no-repeat
+    center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div.centercontainer h1 {
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
