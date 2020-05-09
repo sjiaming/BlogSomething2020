@@ -24,9 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Revamp previous websites to a new version. A personal blog to post random stuff.
 baseurl: "/BlogSomething2020" # the subpath of your site, e.g. /blog
 exclude: ['README.md']
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+permalink : pretty
 
 # Build settings
 theme: minima

@@ -2,19 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Default Layouts</title>
+    <title>{% if page.title %} {{page.title}} {% endif %}</title>
+    <link href="{{site.baseurl}}/assets/css/main.css" rel = "stylesheet">
 </head>
 <body>
 <header>
-    <strong>Title in Default Layout</strong>
-    <nav>
-        <ul>
-            <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-            <li><a href="{{site.baseurl}}/news.html">News</a></li>
-        </ul>
-    </nav>
+    {% include navigation.html navtype="nav-top" %}
 </header>
 
     {{content}}
+
+
 </body>
 </html>
