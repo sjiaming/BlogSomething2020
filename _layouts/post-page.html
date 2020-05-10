@@ -3,25 +3,21 @@ layout: default
 ---
 
 
+<div class="row">
+    <div class="row-cols-1 directory-row">
+            {% if page.banner %}
 
-<div class="article">
-    <div class="article-banner">
-        {% if page.banner %}
+                <img src= "{{site.baseurl}}/{{page.banner}}" class="img-fluid" alt="Responsive image">
 
-            <img src= "{{site.baseurl}}/{{page.banner}}">
-
-        {% endif %}
+            {% endif %}
     </div>
-    
-    <div id="HTMLtoPDF">
 
-    <div class="article-body">
-
-        <div class = "article-title">
+    <div class="row-cols-1 directory-row">
+        <div>
             <big><h1>{{ page.title }}</h1></big>
         </div>
 
-        <p class="article-info">
+        <p>
             {% if page.author %}
             <span class="glyphicon glyphicon-user"></span>
             <span class="text"> {{ page.author }}</span>
@@ -36,28 +32,13 @@ layout: default
 
         </p>
 
-        <!--
-        {% if page.imgsrc %}
-            <div class="article-image">
-            <img src= "{{site.baseurl}}/{{page.imgsrc}}">
-            </div>
-        {% endif %}
-        -->
-        <div class= "article-content">
-            <div class = "#content">
-                 <hr>
-                 {{ content | replace: '<li>[ ]', '<li class="box task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled>' | replace: '<li>[x]', '<li class="box_done task-list-item"><input type="checkbox" class="task-list-item-checkbox" value="on" disabled checked>' }}
-            </div>
+        
+        <div>
+             <hr>
+             {{ content | replace: '<li>[ ]', '<li class="box task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled>' | replace: '<li>[x]', '<li class="box_done task-list-item"><input type="checkbox" class="task-list-item-checkbox" value="on" disabled checked>' }}
     
-             <div type="button" onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon glyphicon-arrow-up"></span></div>
-             <div type="button" onclick="getPDF()" id="myBtn2" title="download"><span class="glyphicon glyphicon-save"></span></div>
         </div>
 
     </div>
     
-    </div>
-
-   
 </div>
-
-

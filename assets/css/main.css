@@ -6,3 +6,5 @@
 {% include_relative customize/homepage.css %}
 
 {% include_relative customize/defaultpage.css %}
+
+{% include_relative customize/postpage.css %}
