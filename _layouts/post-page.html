@@ -4,15 +4,8 @@ layout: default
 
 
 <div class="row">
-    <div class="row-cols-1 directory-row">
-            {% if page.banner %}
 
-                <img src= "{{site.baseurl}}/{{page.banner}}" class="img-fluid" alt="Responsive image">
-
-            {% endif %}
-    </div>
-
-    <div class="row-cols-1 directory-row">
+    <div class="row-cols-1 directory-row w-100 directory-head">
         <div>
             <big><h1>{{ page.title }}</h1></big>
         </div>
@@ -31,8 +24,18 @@ layout: default
             {% endif %}
 
         </p>
+    </div>
+    
+    <div class="row-cols-1 directory-row w-100">
+            {% if page.banner %}
 
-        
+                <img src= "{{site.baseurl}}/{{page.banner}}" class="img-fluid" alt="Responsive image">
+
+            {% endif %}
+    </div>
+
+
+    <div class="row-cols-1 directory-row w-100">
         <div>
              <hr>
              {{ content | replace: '<li>[ ]', '<li class="box task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled>' | replace: '<li>[x]', '<li class="box_done task-list-item"><input type="checkbox" class="task-list-item-checkbox" value="on" disabled checked>' }}
