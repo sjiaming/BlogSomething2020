@@ -4,3 +4,5 @@
 {% include_relative bootstrap.css %}
 
 {% include_relative customize/homepage.css %}
+
+{% include_relative customize/defaultpage.css %}

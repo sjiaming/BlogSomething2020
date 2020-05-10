@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{% if page.title %} {{page.title}} {% endif %}</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% if page.title %} {{page.title}} {% endif %}</title>
     <link href="{{site.baseurl}}/assets/css/main.css" rel = "stylesheet">
-</head>
-<body class="homepage">
+ </head>
+<body class="default-background">
     <header>
-        {% include navigation.html navtype="nav-top" %}
+        {% include navigation.html navclass="nav-default" %}
     </header>
 
-    {{content}}
+    <section>
+    	<div class="container default-bg">
 
+         {{ content }}
+        </div>
 
+    </section>
+
+	<footer>
+
+	</footer>
+
+    {% include scripts.html %}
 </body>
 </html>

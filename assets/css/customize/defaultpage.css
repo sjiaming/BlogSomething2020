@@ -1,0 +1,17 @@
+.default-background {
+    background-color: #ffffff;
+    center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.directory-row {
+    margin-bottom: 40px;
+}
+
+.nav-default {
+    background-color: #3498DB;
+}

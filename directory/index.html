@@ -1,0 +1,89 @@
+---
+layout: default
+title: directory
+---
+<div class="row row-cols-3 directory-row">
+
+</div>
+
+<div class="row row-cols-3 directory-row">
+    <h1>Posts</h1>
+</div>
+
+<div class="row">
+    <h2>Machine Learning</h2>
+</div>
+
+{% assign posts_cnt = site.categories.machine-learning | size %}
+
+
+{% for post in site.categories.machine-learning limit: 3%}
+    {% assign mod = forloop.index0 | modulo: 3 %}
+        {% if posts_cnt < 3 %}
+          {% if mod==0 %}
+            <div class="row row-cols-3 directory-row">
+                        <div class="card-deck">
+          {% endif %}
+        {% endif %}
+
+
+       {% if posts_cnt > 3 %}
+          {% if mod==0 %}
+            <div class="row row-cols-1 directory-row">
+                        <div class="card-deck">
+          {% endif %}
+        {% endif %}
+
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">{{post.title}}</h5>
+                        <p class="card-text">{{post.description}}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+        {% if mod==2 %}
+                </div>
+    	    </div>
+		{% endif %}
+
+{% endfor %}
+
+<div class="row">
+    <h2>Cryptography</h2>
+</div>
+
+{% assign posts_cnt = site.categories.cryptography | size %}
+
+
+{% for post in site.categories.cryptography limit: 3%}
+    {% assign mod = forloop.index0 | modulo: 3 %}
+        {% if posts_cnt < 3 %}
+          {% if mod==0 %}
+            <div class="row row-cols-3 directory-row">
+                        <div class="card-deck">
+          {% endif %}
+        {% endif %}
+
+
+       {% if posts_cnt > 3 %}
+          {% if mod==0 %}
+            <div class="row row-cols-1 directory-row">
+                        <div class="card-deck">
+          {% endif %}
+        {% endif %}
+
+                    <div class="card" style="width: 18rem;">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">{{post.title}}</h5>
+                        <p class="card-text">{{post.description}}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+        {% if mod==2 %}
+                </div>
+    	    </div>
+		{% endif %}
+
+{% endfor %}

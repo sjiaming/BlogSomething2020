@@ -1,5 +1,5 @@
 .homepage {
-    background: url('{{site.baseurl}}/assets/images/color_plate.jpg') no-repeat
+    background: url('{{site.baseurl}}/assets/images/blue_mountain.jpg') no-repeat
     center center fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -7,7 +7,7 @@
     background-size: cover;
 }
 
-div.centercontainer h1 {
+div.centercontainer a {
     margin: 0;
     color: white;
     position: absolute;
@@ -15,4 +15,14 @@ div.centercontainer h1 {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+
+.navbar-brand-icon a img{
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
 }
