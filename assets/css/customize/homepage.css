@@ -1,11 +1,17 @@
 .homepage {
-    background: url('{{site.baseurl}}/assets/images/blue_mountain.jpg') no-repeat
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('{{site.baseurl}}/assets/images/blue_mountain.jpg') no-repeat
     center center fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
+div.centercontainer {
+    width: 100%;
+    height: 100%;
+}
+
 
 div.centercontainer a {
     margin: 0;
@@ -14,8 +20,13 @@ div.centercontainer a {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    font-family: 'sans-serif', cursive;
+    font-size: 500%;
+
 }
+
+
 
 .navbar-brand-icon a img{
   display: inline-block;

@@ -1,0 +1,41 @@
+{% assign posts_cnt = site.categories[{{include.cat-name}}] | size %}
+
+
+{% for post in site.categories[{{include.cat-name}}] limit: 3%}
+    {% assign mod = forloop.index0 | modulo: 3 %}
+        {% if posts_cnt < 3 %}
+          {% if mod==0 %}
+            <div class="row row-cols-3 directory-row">
+                        <div class="card-deck">
+          {% endif %}
+        {% endif %}
+
+
+       {% if posts_cnt > 3 %}
+          {% if mod==0 %}
+            <div class="row row-cols-1 directory-row">
+                        <div class="card-deck">
+          {% endif %}
+        {% endif %}
+
+                            <div class="card" style="width: 18rem;">
+                              <img src="..." class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">{{post.title}}</h5>
+                                <p class="card-text">{{post.description}}</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+
+       {% if posts_cnt > 3 %}
+            {% if mod==2 %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endif %}
+{% endfor %}
+{% if posts_cnt < 3 %}
+
+            </div>
+        </div>
+{% endif %}
