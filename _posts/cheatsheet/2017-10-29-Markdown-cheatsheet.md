@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: post-page
 title: Markdown Cheatsheet
 description: Syntax in how to write markdown file for this blog.
-imgsrc: assets/pics/tools/markdown.jpg
-banner: assets/pics/tools/markdown_banner.png
+imgsrc: assets/images/tools/markdown.jpg
+banner: assets/images/tools/markdown_banner.png
 date: 2017-10-29
 category: cheatsheet
 tags: [Markdown,Cheatsheet]
@@ -52,7 +52,7 @@ This is a summary of useful syntax (supported by this blog) to write Markdown :s
 ### __5. Images__
 `![Markdown Logo](picture_link.jpg)`<br>
 
-![Markdown Logo]({{site.baseurl}}/assets/pics/tools/markdown.jpg)
+![Markdown Logo]({{site.baseurl}}/assets/images/tools/markdown.jpg)
 
 ### __6. Code and Syntax Highlighting____
 

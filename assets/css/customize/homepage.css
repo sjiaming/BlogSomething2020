@@ -1,5 +1,5 @@
 .homepage {
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('{{site.baseurl}}/assets/images/blue_mountain.jpg') no-repeat
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('{{site.baseurl}}/assets/images/blue_mountain-min.jpg') no-repeat
     center center fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;

@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: post-page
 title: Math Background for Public Key Cryptography
 description: Basic number theory knowledge
-imgsrc: assets/pics/crypto/1.jpg
-banner: assets/pics/crypto/math_banner.jpg
+imgsrc: assets/images/crypto/1.jpg
+banner: assets/images/crypto/math_banner.jpg
 date: 2017-11-02
 category: cryptography
 tags: [Math,Cryptography]

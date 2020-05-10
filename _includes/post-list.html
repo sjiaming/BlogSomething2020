@@ -11,23 +11,26 @@
         {% endif %}
 
 
-       {% if posts_cnt > 3 %}
+       {% if posts_cnt >= 3 %}
           {% if mod==0 %}
             <div class="row row-cols-1 directory-row">
                         <div class="card-deck">
           {% endif %}
         {% endif %}
 
-                            <div class="card" style="width: 18rem;">
-                              <img src="..." class="card-img-top" alt="...">
+                            <div class="card text-center" style="width: 18rem;">
+
+                              <img src="{{site.baseurl}}/{{post.imgsrc}}" class="card-img-top" alt="...">
                               <div class="card-body">
-                                <h5 class="card-title">{{post.title}}</h5>
+                                <a href="{{site.baseurl}}/{{post.url}}" >
+                                  <h5 class="card-title">{{post.title}}</h5>
+                                </a>
                                 <p class="card-text">{{post.description}}</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                
                               </div>
                             </div>
 
-       {% if posts_cnt > 3 %}
+       {% if posts_cnt >= 3 %}
             {% if mod==2 %}
                     </div>
                 </div>

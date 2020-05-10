@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: post-page
 title: Basic Octave Commands
 description: Some basic commands of Octave
-imgsrc: assets/pics/tools/octave.jpg
-banner: assets/pics/tools/octave_banner.jpg
+imgsrc: assets/images/tools/octave.jpg
+banner: assets/images/tools/octave_banner.jpg
 date: 2017-10-31
 category: cheatsheet
 tags: [Octave, Cheatsheet]
