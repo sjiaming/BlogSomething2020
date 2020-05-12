@@ -1,8 +1,6 @@
-- heading: 'Machine Learning'
-  category-name: 'machine-learning'
+- category-name: 'cheatsheet'
 
-- heading: 'Cryptography'
-  category-name: 'cryptography'
+- category-name: 'machine-learning'
 
-- heading: 'Cheatsheet'
-  category-name: 'cheatsheet'
+- category-name: 'cryptography'
+
