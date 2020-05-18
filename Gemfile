@@ -5,6 +5,7 @@ gem "jekyll"
 
 gem "minima", "~> 2.5"
 
+gem "rouge"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

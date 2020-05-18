@@ -8,3 +8,5 @@
 {% include_relative customize/defaultpage.css %}
 
 {% include_relative customize/postpage.css %}
+
+{% include_relative syntax.css %}
