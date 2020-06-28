@@ -2,7 +2,8 @@
 layout: post-page
 title: Data Visualization
 description: Simple plotting of charts using Python
-imgsrc: #
+imgsrc: assets/images/tools/data_visualization.png
+banner: assets/images/tools/data_visualization_banner.jpg
 date: 2020-06-09
 category: cheatsheet
 tags: [Cheatsheet]
@@ -15,7 +16,7 @@ Disclaimer: This is just a notes from coursera course 'Data Visualization with P
 %matplotlib inline # allows changes to the figure plotted inline
 import matplotlib.pyplot as plt
 plt.plot(5,5,'0') # plot a dot at coordinate (5,5) 
-plt.show()
+plt.show()在不在这边v不准备治标不治本
 
 # Alternative plotting using pandas:
 df.plot[kind='inline'], # note the x-axis is the index of the dataframe
